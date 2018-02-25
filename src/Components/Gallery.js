@@ -6,15 +6,11 @@ export default class Gallery extends React.Component {
     super(props);
     this.state={
     	mypics:[
-    	"./images/swing.gif",
-    	"./images/img2.jpg",
-      "./images/museum.gif",
-      "./images/bananas.jpg",
-    	"./images/img3.jpg",
-      "./images/neo.gif",
-    	"./images/img4.jpg",
-      "./images/fair.gif",
-      "./images/img1.jpg"
+    	"./images/barrels-small.jpg",
+    	"./images/karrett.jpg",
+      "./images/barrels.jpg",
+      "./images/barrels.jpg",
+    	"./images/karrett.jpg",
     	],
     	pic1:0,
     	pic2:1,
@@ -25,11 +21,11 @@ export default class Gallery extends React.Component {
   }
 
   componentDidMount(){
-  	this.myInt= setInterval(this.rotate,3000);
+  	//this.myInt= setInterval(this.rotate,3000);
 	}
 	
 	componentWillUnmount(){
-		clearInterval(this.myInt);
+		//clearInterval(this.myInt);
 	}
 
   rotate(){
@@ -72,20 +68,6 @@ export default class Gallery extends React.Component {
     return (
       <div className="padding20 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center blueText titleFont">
-			<div className="rsvp alert alert-danger alert-dismissible" role="alert">
-			<button style={{fontSize:'56px'}} type="button" className="close whiteText" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h1 className="roundFont heartbeat"><span className="glyphicon glyphicon-envelope" aria-hidden="true"></span> RSVP</h1>
-				<p>
-					Due to a printing error names were not included in our RSVP cards,
-					<br/> if you haven't already done so please add your name(s) to it before sending it.
-				</p>
-				<p>
-					If you already sent your card but didn't get this message in time, please text or 
-					<b><a target='_blank' rel="noopener noreferrer" href='mailto:conorandmarco@gmail.com'> E-mail </a></b>us at ConorAndMarco@gmail.com
-					<br/>
-					<b>Thank you!</b>
-				</p>
-      </div>
         <hr/>
 				<h2>GALLERY</h2>
 				<hr/>

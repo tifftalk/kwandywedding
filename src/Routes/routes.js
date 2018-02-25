@@ -14,18 +14,19 @@ import Schedule from '../Components/Schedule';
 import Directions from '../Components/Directions';
 import Registry from '../Components/Registry';
 import Gallery from '../Components/Gallery';
+import Event from '../Components/Event';
 
 export default (
   // The high level component is the Router component
   <Router >
     <div className="container-fluid" style={{padding:'0px'}}>
-      <Navbar/>
+      {/*<Navbar/>*/}
       <Route exact path="/" component={Welcome}/>
       <Route exact path="/party" component={PartyContainer}/>
       <Route exact path="/schedule" component={Schedule}/>
       <Route exact path="/directions" component={Directions}/>
       <Route exact path="/registry" component={Registry}/>
-      <Route exact path="/" component={Gallery}/>
+      <Route exact path="/" component={Event}/>
       <Footer/>
     </div>
   </Router>
