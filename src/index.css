@@ -5,6 +5,57 @@ body {
   /*background-color: #323232;*/
 }
 
+#root {
+  max-width: 1167px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner {
+  overflow: hidden;
+}
+.banner img {
+  padding: 0;
+  align-self: start;
+}
+.banner div {
+  padding-top: 50px;
+  background-color: #FFD79B;
+  background-image: url('./resources/special-event.jpg');
+  background-position: bottom right;
+}
+.banner h1, .banner h2, .banner h3, .banner h4 {
+  color: #ffffff;
+  text-shadow: 1px 1px black;
+}
+@media (max-width: 800px) { 
+  .banner div {
+    padding-top: 0;
+  }
+  .banner h1 {
+    font-size: 40px;
+  }
+}
+
+.banner a, .banner a:hover, .banner a:visited, .banner a:focus {
+  color: #ffffff;
+}
+
+
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: start;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
 .rsvp{
   width: 100%;
   background-color: #f15252;
@@ -338,17 +389,17 @@ animation: AnimationName 30s ease infinite;
 }
 
 a {
-	color:#5A8E2E;
-	text-decoration: none;
+  color: rgb(51, 51, 51);
+	text-decoration: underline;
 }
 
 a:hover{
-	color:#5A8E2E;
+  color: rgb(51, 51, 51);
 	text-decoration: underline;
 }
 
 a:visited{
-	color: #5A8E2E;
+  color: rgb(51, 51, 51);
 	text-decoration: none;
 }
 
@@ -431,8 +482,9 @@ a:focus{
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 60px;
+  font-family: "Raleway";
+  font-size: 50px;
+  color: #ffffff;
 }
 hr {
   border: 1px #401E06 solid;
@@ -444,15 +496,6 @@ hr {
 	background-color: #224b80;
 	/*background-blend-mode: soft-light;*/
 	background-image: url('./resources/beach.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.tileback{
-	background-color: #224b80;
-	/*background-blend-mode: soft-light;*/
-	background-image: url('./resources/main.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

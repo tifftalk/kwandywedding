@@ -19,7 +19,7 @@ export default class Footer extends React.Component {
           <h4 className="titleFont">TAG US</h4>
           <hr/>
           <p>Use the hashtag:</p>
-          <h5>#kwandy2018</h5>
+          <h5>#kwandylove</h5>
         </div>
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{fontSize:'10px'}}>
           <p>© Kwandy Designs 2018</p>

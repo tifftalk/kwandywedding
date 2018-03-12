@@ -1,0 +1,5 @@
+#! /bin/bash
+NODE_ENV=production yarn run build
+NODE_ENV=production node deploy.js
+
+echo 'View production at: http://kwandy.love'
